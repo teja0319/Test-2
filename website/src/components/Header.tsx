@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { nav } from "@/content/site";
 import { Logo } from "./Logo";
@@ -29,13 +30,13 @@ export function Header() {
       }`}
     >
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <a href="#top" aria-label="Megnetora AI Solutions, home" onClick={() => setOpen(false)}>
+        <Link href="/" aria-label="Megnetora AI Solutions, home" onClick={() => setOpen(false)}>
           <Logo tone={solid ? "dark" : "light"} />
-        </a>
+        </Link>
 
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Main">
           {nav.map((item) => (
-            <a
+            <Link
               key={item.href}
               href={item.href}
               className={`text-sm font-medium transition-colors ${
@@ -43,17 +44,17 @@ export function Header() {
               }`}
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
         <div className="flex items-center gap-3">
-          <a
-            href="#contact"
+          <Link
+            href="/#contact"
             className="hidden rounded-full bg-green px-5 py-2.5 text-sm font-semibold text-navy-950 transition hover:bg-green-600 hover:text-white sm:inline-flex"
           >
             Free Consultation
-          </a>
+          </Link>
           <button
             type="button"
             className={`rounded-lg p-2 lg:hidden ${solid ? "text-navy-900" : "text-white"}`}
@@ -76,23 +77,23 @@ export function Header() {
           <ul className="flex flex-col">
             {nav.map((item) => (
               <li key={item.href}>
-                <a
+                <Link
                   href={item.href}
                   onClick={() => setOpen(false)}
                   className="block border-b border-line py-4 font-display text-lg text-navy-900"
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
-          <a
-            href="#contact"
+          <Link
+            href="/#contact"
             onClick={() => setOpen(false)}
             className="mt-6 flex justify-center rounded-full bg-green px-5 py-3 font-semibold text-navy-950"
           >
             Book a Free Consultation
-          </a>
+          </Link>
         </nav>
       )}
     </header>

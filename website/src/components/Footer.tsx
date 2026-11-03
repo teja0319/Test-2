@@ -1,11 +1,11 @@
-import { nav, pillars, site } from "@/content/site";
+import { nav, pillars, products, site } from "@/content/site";
 import { CurrentYear } from "./CurrentYear";
 import { Logo } from "./Logo";
 
 export function Footer() {
   return (
     <footer className="bg-navy-950 text-white/60">
-      <div className="mx-auto grid max-w-7xl gap-10 border-t border-white/10 px-4 py-14 sm:px-6 md:grid-cols-[1.4fr_1fr_1fr_1fr] lg:px-8">
+      <div className="mx-auto grid max-w-7xl gap-10 border-t border-white/10 px-4 py-14 sm:px-6 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr_1fr] lg:px-8">
         <div>
           <Logo tone="light" />
           <p className="mt-5 max-w-xs text-sm leading-relaxed">
@@ -13,10 +13,11 @@ export function Footer() {
             businesses.
           </p>
         </div>
-        <FooterCol title="Company" links={nav} />
+        <FooterCol title="Products" links={products} />
+        <FooterCol title="Company" links={nav.filter((n) => n.href.startsWith("/#"))} />
         <FooterCol
           title="Services"
-          links={pillars.map((p) => ({ label: p.title, href: "#services" }))}
+          links={pillars.map((p) => ({ label: p.title, href: "/#services" }))}
         />
         <FooterCol title="Follow us" links={site.social} />
       </div>

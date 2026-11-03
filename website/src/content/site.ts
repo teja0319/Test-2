@@ -21,11 +21,17 @@ export const site = {
 };
 
 export const nav = [
-  { label: "Services", href: "#services" },
-  { label: "Solutions", href: "#solutions" },
-  { label: "Process", href: "#process" },
-  { label: "Why Us", href: "#why-us" },
-  { label: "FAQ", href: "#faq" },
+  { label: "WAMA CRM", href: "/products/wamacrm" },
+  { label: "Services", href: "/#services" },
+  { label: "Solutions", href: "/#solutions" },
+  { label: "Process", href: "/#process" },
+  { label: "Why Us", href: "/#why-us" },
+  { label: "FAQ", href: "/#faq" },
+];
+
+export const products = [
+  { label: "WAMA CRM", href: "/products/wamacrm" },
+  { label: "WAMA CRM sign in", href: "https://wamacrm.magnetora.in/login" },
 ];
 
 export const industries = [

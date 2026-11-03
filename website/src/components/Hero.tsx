@@ -39,10 +39,10 @@ export function Hero() {
               <ArrowRightIcon className="h-5 w-5 transition group-hover:translate-x-1" />
             </a>
             <a
-              href="#services"
+              href="#products"
               className="inline-flex items-center justify-center rounded-full border border-white/20 px-7 py-3.5 font-semibold text-white transition hover:border-white/50 hover:bg-white/5"
             >
-              Explore Services
+              See WAMA CRM
             </a>
           </div>
           <ul className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm text-white/70">

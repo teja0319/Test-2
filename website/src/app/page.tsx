@@ -1,4 +1,5 @@
 import { Contact } from "@/components/Contact";
+import { FeaturedProduct } from "@/components/FeaturedProduct";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
@@ -41,6 +42,7 @@ export default function Home() {
       <main>
         <Hero />
         <Industries />
+        <FeaturedProduct />
         <Services />
         <Solutions />
         <Approach />
