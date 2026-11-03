@@ -3,6 +3,7 @@ import { FeaturedProduct } from "@/components/FeaturedProduct";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
+import { TrustedBy } from "@/components/TrustedBy";
 import {
   Approach,
   Faq,
@@ -41,6 +42,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <TrustedBy />
         <Industries />
         <FeaturedProduct />
         <Services />

@@ -34,6 +34,23 @@ export const products = [
   { label: "WAMA CRM sign in", href: "https://wamacrm.magnetora.in/login" },
 ];
 
+// Organisations that trust Megnetora (shown in the "Trusted by" strip).
+// Logos are from each organisation's own website.
+export const clients = [
+  {
+    name: "Indian Consular Help Desk",
+    description: "Passport, OCI, visa & PCC assistance · Canada",
+    href: "https://consularhelpdesk.com",
+    logo: { src: "/clients/consularhelpdesk.png", width: 216, height: 240 },
+  },
+  {
+    name: "DEEP Trust",
+    description: "Education, health & livelihood NGO · Hyderabad",
+    href: "https://deepindia.org",
+    logo: { src: "/clients/deep-trust.png", width: 344, height: 102 },
+  },
+];
+
 export const industries = [
   "E-commerce",
   "Real Estate",

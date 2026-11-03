@@ -34,7 +34,7 @@ function SectionHeading({
 
 export function Industries() {
   return (
-    <section className="border-b border-line bg-white py-10" aria-label="Industries we serve">
+    <section className="border-y border-line bg-surface py-10" aria-label="Industries we serve">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <p className="text-center text-sm font-medium text-muted">
           AI growth solutions for businesses in
