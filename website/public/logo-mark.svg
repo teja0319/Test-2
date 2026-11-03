@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="24 24 196 186" role="img" aria-label="Megnetora">
+<defs><linearGradient id="mgA" gradientUnits="userSpaceOnUse" x1="50" y1="0" x2="212" y2="0"><stop offset="0.43" stop-color="#0A1F44"/><stop offset="0.6" stop-color="#0FB5A6"/><stop offset="1" stop-color="#22C55E"/></linearGradient></defs>
+<rect x="174" y="118" width="32" height="86" fill="#0A1F44"/>
+<path d="M50 204 V62 L120 142 L183.47 67.5" fill="none" stroke="url(#mgA)" stroke-width="32" stroke-linejoin="miter" stroke-miterlimit="4"/>
+<polygon points="212,34 207.29,90.42 157.05,47.62" fill="#22C55E"/>
+</svg>

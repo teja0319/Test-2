@@ -8,3 +8,4 @@ Megnetora AI Solutions builds AI-powered business solutions, AI digital marketin
 
 - **Brand guide** (name meaning, definition, taglines, logo symbolism, colours, typography, usage rules): [BRAND.md](BRAND.md)
 - **Logo files** (SVG + PNG, light/dark/mono/icon/favicon): [logo/](logo/)
+- **Website** (Next.js): [website/](website/). See [website/README.md](website/README.md) to run and deploy it.
